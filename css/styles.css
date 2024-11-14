@@ -60,7 +60,7 @@ h2 {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(3, auto);
     grid-gap: 20px;
-    padding: 20px;
+    padding: 10px;
 
 }
 
