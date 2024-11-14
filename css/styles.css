@@ -71,6 +71,15 @@ h2 {
     background-color:#F6F7A9;
 }
 
+.details{
+    display:none;
+    margin-top: 10px;
+}
+
+.details.show{
+    display:block;
+}
+
 
 footer {    
     padding: 5px;
