@@ -55,6 +55,22 @@ h2 {
     color: #d70c0c;
 }
 
+.projects-container {
+    display:grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, auto);
+    grid-gap: 20px;
+    padding: 20px;
+
+}
+
+.project-item{
+    text-align: center;
+    padding: 5px;
+    border-radius:10px;
+    background-color:#F6F7A9;
+}
+
 
 footer {    
     padding: 5px;
