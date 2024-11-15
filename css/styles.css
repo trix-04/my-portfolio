@@ -103,7 +103,7 @@ h2 {
 form{
     background-color: rgb(255, 255, 255);
     padding: 20px;
-    width: 600px;
+    width: 90%;
     margin: 0 auto;
 
 }
@@ -119,7 +119,7 @@ input[type="text"], input[type="email"] {
 
 
 #message {
-    width: 600px; 
+    width: 100%; 
     height: 100px; 
     padding: 10px; 
     border-radius: 5px;
