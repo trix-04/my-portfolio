@@ -139,6 +139,16 @@ input[type="text"], input[type="email"] {
     border-radius: 5px;
 }
 
+.error {
+    color: red;
+    font-size: 0.875em;
+    margin-top: 0.25em;
+}
+
+.invalid {
+    border-color: red;
+}
+
 footer {    
     padding: 5px;
     position: fixed; /*preferably position: relative so the footer doesn't overlap contact me section */
