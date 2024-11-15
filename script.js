@@ -50,3 +50,41 @@ form.addEventListener('submit', function(event) {
         event.preventDefault();
     }
 });
+
+function showError(inputElement, message) {
+    const errorElement = document.createElement('div');
+    errorElement.className = 'error';
+    errorElement.innerText = message;
+
+    inputElement.parentNode.insertBefore(errorElement, inputElement.nextSibling);
+    inputElement.classList.add('invalid');
+}
+
+function clearErrors() {
+    const errors = document.querySelectorAll('.error');
+    errors.forEach(function(error) {
+        error.remove();
+    });
+    const invalidInputs = document.querySelectorAll('.invalid');
+    invalidInputs.forEach(function(input) {
+        input.classList.remove('invalid');
+    });
+}
+
+function isValidEmail(email) {
+    if (email.includes('@') && email.includes('.')) {
+        return true;
+    } else {
+        return false;
+    }
+}
+
+function isValidName(name) {
+    let namePattern = /^[a-zA-Z]+$/;
+    if (namePattern.test(name)) {
+        return true;
+    } else {
+        return false;
+    }
+}
+
