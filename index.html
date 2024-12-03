@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+
+</head>
+<body>
+    
+    <header>
+        <div class="logo-container">
+            <!---<img src="path/to/your/logo.png" alt="Custom Logo" class="logo"> *will add logo after final edit-->
+            <span class="site-name">Trish Figueroa</span>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#projects">Projects</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>Hi, my name is Trish! I am a self-taught multimedia artist passionate about expanding my creative skill set through technology. Currently, I am honing my skills in front-end development and UX/UI design to create user-centered, engaging experiences.</p>
+        <p>I worked as a Software Engineer Fellow at Headstarter.co, while also taking on roles as a Project Manager and Office Administrator within my previous jobs. My background in Neuroscience, Psychology, and Forensics adds a unique perspective to my work, blending human behavior insights with my passion for artistic creativity.</p>
+        <p>Apart from art, I also enjoy nature, sports, fashion, fitness, and travel—drawing from these experiences as inspiration for my creativity and growth.</p>
+    </section>
+
+    <section class="grid-section" id="projects">
+        <h2>My Projects</h2>
+            <div class="projects-container">
+                <div class="project-item"><h4>Project 1 &#128193;</h4>
+                    <button class="toggle-details">More details</button>
+                    <div class="details">
+                        <p class="special-p">Details about Project 1...</p>
+                    </div>
+                </div>
+                <div class="project-item"><h4>Project 2 &#128193;</h4>
+                    <button class="toggle-details">More details</button>
+                    <div class="details">
+                        <p class="special-p">Details about Project 2...</p>
+                    </div>
+                </div>                    
+                <div class="project-item"><h4>Project 3 &#128193;</h4>
+                    <button class="toggle-details">More details</button>
+                    <div class="details">
+                        <p class="special-p">Details about Project 3...</p>
+                    </div>
+                </div>                   
+                <div class="project-item"><h4>Project 4 &#128193;</h4>
+                    <button class="toggle-details">More details</button>
+                    <div class="details">
+                        <p class="special-p">Details about Project 4...</p>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <form id="contactForm" action="#" method="POST" novalidate>
+            <label for="name">First Name:</label>
+            <input type="text" id="firstName" name="first-name" placeholder="John" required>
+            <br>
+
+            <label for="name">Last Name:</label>
+            <input type="text" id="lastName" name="last-name" placeholder="Doe" required>
+            <br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="email address" required>
+
+            <label for="text-box">Message:</label>
+            <br>
+            <textarea id="message" name="message" placeholder="looking forward to hearing from you :)"></textarea>
+            <br>
+
+            <button type="submit" value="submit" class="grid-item submit-button">Submit</button>
+               
+
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; Trish Figueroa, 2024</p>
+    </footer>
+
+    <script src="script.js" defer></script>
+</body>
+</html>
