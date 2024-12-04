@@ -171,9 +171,62 @@ input[type="text"], input[type="email"] {
     border-color: red;
 }
 
+.dark-mode {
+    background-color: #333;
+    color: #fff;
+    
+}
+
+.dark-mode nav ul li a{
+    color:#b3b3b3;
+}
+
+.dark-mode header, .dark-mode footer{
+    background-color: #111;
+    color:white;
+}
+
+.dark-mode .project-item{
+    background-color:#444;
+}
+
+.dark-mode section, 
+.dark-mode p, 
+.dark-mode h2, 
+.dark-mode label,
+.dark-mode input[type="text"], 
+.dark-mode input[type="email"], 
+.dark-mode textarea {
+    color: #fff;
+}
+
+.dark-mode input[type="text"], 
+.dark-mode input[type="email"], 
+.dark-mode textarea {
+    background-color: #555;
+    border-color: #888;
+}
+
+
+#toggleTheme{
+    position:absolute;
+    top: 70px;
+    right: 20px;
+    padding: 10px;
+    background-color: #111;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#toggleTheme:hover{
+    background-color: #333;
+}
+
 footer {    
     padding: 5px;
-    position: fixed; /*preferably position: relative so the footer doesn't overlap contact me section */
+    position: relative; /*preferably position: relative so the footer doesn't overlap contact me section */
     bottom: 0;
     left: 0;
     width: 100%;
