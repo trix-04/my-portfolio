@@ -31,46 +31,60 @@
 
 
 .about-section {
-    padding: 100px 5%; 
+    padding: 150px 5%; 
     background-color: #f7f7f7; 
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 40px;
 }
 
 .about-container {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: row;
     justify-content: space-between;
     align-items: flex-start;
-    gap: 40px;
+    gap: 50px;
     max-width: 1200px;
     margin: 0 auto;
 }
 
 .about-heading {
-    flex: 1 1 30%;
-    max-width: 300px;
-    text-align: right;
+    flex: 1;
+    max-width: 40%;
+    font-size: 56px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    line-height: 1.2;
+    color: #111;
+    text-align: left;
 }
 
 .about-heading h1 {
-    font-size: 36px; 
+    font-size: 56px; 
     font-weight: bold;
     letter-spacing: 1px;
-    line-height: 1.4;
+    line-height: 1.2;
     color: #111;
     margin: 0;
 }
 
 .about-description{
-    flex: 1 1 60%;
-    max-width: 800px;
-    padding-left: 20px;
+    flex: 1.5;
+    max-width: 60%;
+    font-size: 20px;
+    line-height: 1.8;
+    color:#333;
     text-align: left;
+    
 }
 
 .about-description p {
-    font-size: 18px;
+    font-size: 20px;
     line-height: 1.8;
-    margin: 0;
+    margin-bottom: 20px;
 }
 
 
@@ -158,7 +172,7 @@ h2 {
     margin-bottom: 20px;
     font-family: 'Inter', sans-serif;
     font-weight: bold;
-    font-size: 20px;
+    font-size: 32px;
 }
 
 #projects section{
@@ -401,28 +415,26 @@ footer a:hover{
         flex-direction: column;
         align-items: center;
         text-align: center;
+        gap: 20px;
     }
 
     .about-heading{
         max-width: 100%;
-        padding-right: 0;
-        margin-bottom: 20px;
+        
     }
 
     .about-description {
         max-width: 100%;
-        padding-left: 0;
     }
 
     .about-heading h1{
-        font-size: 32px;
-        margin-bottom: 15px;
+        font-size: 36px;
+        
     }
 
     .about-description p{
-        font-size: 16px;
-        line-height: 1.6;
-        margin-bottom: 15px;
+        font-size: 18px;
+
     }
 
     header{
@@ -457,14 +469,14 @@ footer a:hover{
 
 @media only screen and (max-width: 600px) {
     .about-heading h1 {
-        font-size: 28px; 
+        font-size: 36px; 
         margin-bottom: 20px;
     }
 
     .about-description p {
-        font-size: 15px; 
-        line-height: 1.5;
-        padding: 0 10px; 
+        font-size: 18px; 
+        line-height: 1.6;
+        
     }
 
     footer{
@@ -473,13 +485,12 @@ footer a:hover{
 }
 
 @media only screen and (max-width: 450px) {
-    .about-heading h1 {
-        font-size: 28px; 
-        margin-bottom: 20px;
+    .about-heading {
+        font-size: 32px; 
     }
 
-    .about-description p {
-        font-size: 14px;
+    .about-description {
+        font-size: 16px;
         line-height: 1.5; 
     }
 }
