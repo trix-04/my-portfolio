@@ -1,3 +1,9 @@
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
 #preloader {
     position: fixed;
     top: 0;
@@ -14,7 +20,7 @@
 
 #loading-text {
     font-size: 50px;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif, sans-serif;
+    font-family:Arial, sans-serif;
     color: #e8e0e0;
 }
 
@@ -24,30 +30,66 @@
 }
 
 
+.about-section {
+    padding: 100px 5%; 
+    background-color: #f7f7f7; 
+}
+
+.about-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.about-heading {
+    flex: 1 1 30%;
+    max-width: 300px;
+    text-align: right;
+}
+
+.about-heading h1 {
+    font-size: 36px; 
+    font-weight: bold;
+    letter-spacing: 1px;
+    line-height: 1.4;
+    color: #111;
+    margin: 0;
+}
+
+.about-description{
+    flex: 1 1 60%;
+    max-width: 800px;
+    padding-left: 20px;
+    text-align: left;
+}
+
+.about-description p {
+    font-size: 18px;
+    line-height: 1.8;
+    margin: 0;
+}
+
+
 body {
     font-family:'Inter', sans-serif;
-    margin: 0;
-    height: 100vh;
-    overflow: auto;   
     background-color: #f9f9f9;
     color: #333;
     line-height: 1.5;
+    scroll-behavior: smooth;
     
 }
 
-header, footer {
-    background-color: black;
-    color: white;
-    text-align: center;    
-}
-
 header {
+    position: relative;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 20px;   
-    position: sticky;
-    top: 0;
+    padding: 20px;
+    text-align: center;
     z-index: 1000;
     background-color: black;
     color:white; 
@@ -103,51 +145,49 @@ h2 {
     color: #111;
 }
 
-#projects {
-    display:flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    padding: 40px o;
-
-}
-
-.project-item img{
-    width: 100%;
-    height: auto;
-    border-radius: 8px;
-}
-
-.details{
-    display:none;
-    margin-top: 10px;
-}
-
-.details.show{
-    display:block;
-}
-
-.toggle-details{
-    font-size: x-small;
-    border-radius: 3px;
+#toggleTheme{
+    position:absolute;
+    top: 70px;
+    right: 20px;
+    padding: 10px;
+    background-color: rgb(17, 17, 63);
+    color: #fff;
     border: none;
-    cursor:pointer;
-    background-color:transparent;
-    color:grey;
+    border-radius: 5px;
+    cursor: pointer;
 }
 
-.project.info{
-    font-size: x-small;
+#toggleTheme:hover{
+    background-color: #8f98b3;
 }
 
-.special-p{
-    font-size: 13px;
-    font-family:Arial, Helvetica, sans-serif;
-} 
+.main-container {
+    scroll-snap-type: y mandatory;
+    overflow-y: auto; 
+    min-height: 80vh; 
+    scroll-behavior: smooth; 
+    overscroll-behavior: contain;
+    padding-bottom: 100px; 
+}
+
+
+section {
+    scroll-snap-align: start; 
+    min-height: 100vh; 
+    padding: 40px 20px; 
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    margin: 0;
+    background: none;
+    border: none;
+    box-shadow: none;
+}
 
 form{
-    background-color: rgb(255, 255, 255);
-    padding: 20px 0;
-    width: 60%;
+    background-color: rgb(203, 225, 228);
+    padding: 20px 30px;
+    width: 70%;
     margin: 0 auto;
 
 }
@@ -177,17 +217,22 @@ input[type="text"], input[type="email"], #message {
 }
 
 .dark-mode {
-    background-color: #545050;
+    background-color: #211e1e;
     color: #fff;
     
 }
 
-.dark-mode nav ul li a{
+.dark-mode .about-section{
+    background-color: #333;
+}
+
+.dark-mode nav ul li a
+.dark-mode .site-name {
     color:#b3b3b3;
 }
 
 .dark-mode header, .dark-mode footer{
-    background-color: #0b0b3d;
+    background-color: #07070b;
     color:white;
 }
 
@@ -195,11 +240,10 @@ input[type="text"], input[type="email"], #message {
     background-color:#444;
 }
 
-.dark-mode .site-name{
-    color:#b3b3b3;
-}
 
 .dark-mode h2,
+.dark-mode .about-heading h1,
+.dark-mode .about-description p,
 .dark-mode input[type="text"], 
 .dark-mode input[type="email"], 
 .dark-mode textarea {
@@ -213,37 +257,80 @@ input[type="text"], input[type="email"], #message {
     border-color: #888;
 }
 
-
-#toggleTheme{
-    position:absolute;
-    top: 70px;
-    right: 20px;
-    padding: 10px;
-    background-color: rgb(17, 17, 63);
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-#toggleTheme:hover{
-    background-color: #545f82;
+.project-item{
+    width: 100%;
+    margin-bottom: 40px;
+    text-align: center;
+    padding: 5px;
+    border-radius: 10px;
+    background-color: #F6F7A9;
+    font-family: monospace;
+    font-size: 15px;
 }
 
 footer {    
-    padding: 10px;
+    padding: 20px;
     position: relative;
-    bottom: 0;
-    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    color: white;
+    text-align: center;
     width: 100%;
-    font-size: 10px;
-    line-height: 1.5;
+    font-size: 12px;
+    z-index:1000;
+    margin-top: 50px;
+    bottom: 0;
     
 }
 
-@media only screen and (max-width: 600px) {
-    header, footer {
-        padding: 10px;
+footer a{
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+footer a:hover{
+    color:#b3b3b3;
+}
+
+@media only screen and (max-width: 1024px) {
+    .about-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .about-heading{
+        max-width: 100%;
+        padding-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .about-description {
+        max-width: 100%;
+        padding-left: 0;
+    }
+
+    .about-heading h1{
+        font-size: 32px;
+        margin-bottom: 15px;
+    }
+
+    .about-description p{
+        font-size: 16px;
+        line-height: 1.6;
+        margin-bottom: 15px;
+    }
+
+    header{
+        padding: 15px;
+
+    } 
+    
+    footer {
+        padding: 15px;
     }
 
     nav ul li {
@@ -264,5 +351,34 @@ footer {
 
     form {
         width: 90%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .about-heading h1 {
+        font-size: 28px; 
+        margin-bottom: 20px;
+    }
+
+    .about-description p {
+        font-size: 15px; 
+        line-height: 1.5;
+        padding: 0 10px; 
+    }
+
+    footer{
+        flex-direction: column;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    .about-heading h1 {
+        font-size: 28px; 
+        margin-bottom: 20px;
+    }
+
+    .about-description p {
+        font-size: 14px;
+        line-height: 1.5; 
     }
 }

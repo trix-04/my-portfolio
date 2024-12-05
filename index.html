@@ -8,12 +8,7 @@
     <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
 
 </head>
-<body>
-
-    <div id="preloader">
-        <div id="loading-text">0%</div>
-    </div>
-    
+<body>  
     
     <header>    
         <div class="logo-container">
@@ -27,44 +22,55 @@
                 <li><a href="#projects">Projects</a></li>
             </ul>
         </nav>
-        <button id="toggleTheme">night mode 🌙</button>
+        <button id="toggleTheme">🌙</button>
     </header>
 
-    <section id="about">
-            <h2>Hi, I'm Trish. I am a self-taught multimedia artist.</h2>
-            <!---<p>Finalize what will be included here : (ie. "Hi, my name is Trish! I am a self-taught multimedia artist passionate about expanding my creative skill set through technology. Currently, I am honing my skills in front-end development and UX/UI design to create user-centered, engaging experiences.</p>
-            <p>I worked as a Software Engineer Fellow at Headstarter.co, while also taking on roles as a Project Manager and Office Administrator within my previous jobs. My background in Neuroscience, Psychology, and Forensics adds a unique perspective to my work, blending human behavior insights with my passion for artistic creativity.</p>
-            <p>Apart from art, I also enjoy nature, sports, fashion, fitness, and travel—drawing from these experiences as inspiration for my creativity and growth."</p> -->
-    </section>
+    <div id="preloader">
+        <div id="loading-text">0%</div>
+    </div>
 
-    <section id="projects">
+    <main class="main-container">
+        <section id="about" class="about-section">
+            <div class="about-container">
+                <h1>Hi, I'm Trish! </h1>
+            </div>
+            <div class="about-description">
+                <p>
+                    I am a self-taught multimedia artist, passionate about expanding my creative skill set through technology. I am currently honing my skills in front-end development and UX/UI deisgn create user-centered, engaging experiences.
+                </p>
+            </div>
+        </section>
+
+        <section id="projects">
             <h2>Projects </h2>
             <!--finalize how i want my projects to be set up & inlcude any current projects-->
-    </section>
+        </section>
 
-    <section id="contact">
-        <h2>Contact Me</h2>
-        <form id="contactForm" action="#" method="POST" novalidate>
-        <label for="name">First Name:</label>
-        <input type="text" id="firstName" name="first-name" placeholder="John" required>
-                
-        <label for="name">Last Name:</label>
-        <input type="text" id="lastName" name="last-name" placeholder="Doe" required>
-                
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" placeholder="email address" required>
-
-        <label for="text-box">Message:</label>
-                
-        <textarea id="message" name="message" placeholder="looking forward to hearing from you :)"></textarea>
-                
-        <button type="submit" value="submit" class="grid-item submit-button">Submit</button>
-        </form>
+        <section id="contact">
+            <h2>Contact Me</h2>
+            <form id="contactForm" action="#" method="POST" novalidate>
+            <label for="firstName">First Name:</label>
+            <input type="text" id="firstName" name="first-name" placeholder="John" required>
+                    
+            <label for="lastName">Last Name:</label>
+            <input type="text" id="lastName" name="last-name" placeholder="Doe" required>
+                    
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="email address" required>
     
-    </section>
+            <label for="text-box">Message:</label>
+                    
+            <textarea id="message" name="message" placeholder="looking forward to hearing from you :)"></textarea>
+                    
+            <button type="submit" value="submit" class="grid-item submit-button">Submit</button>
+            </form>
+        </section>
+
+    </main>
+      
    
     <footer>
-        <p>&copy; Trish Figueroa, 2024</p>
+        © Trish Figueroa 2024 | <a href="#">Instagram</a> | <a href="#">Twitter</a> | <a href="#">Mail</a>
     </footer>
 
     <script src="script.js" defer></script>

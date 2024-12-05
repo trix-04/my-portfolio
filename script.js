@@ -1,22 +1,23 @@
 document.addEventListener("DOMContentLoaded", function() {
-    var loadingText = document.getElementById('loading-text');
+    var preloader = document.getElementById("preloader");
+    var loadingText = document.getElementById("loading-text");
     var percentage = 0;
+
     var interval = setInterval(function() {
-        percentage += 1;
-        loadingText.textContent = percentage + '%';
+        percentage ++;
+        loadingText.textContent = `${percentage}%`;
         if (percentage >= 100) {
             clearInterval(interval);
-            
             preloader.style.opacity = '0';
             setTimeout(function() {
                 preloader.style.display = 'none';
-            }, 500); n
+            }, 400); n
         }
     }, 30);
 });
 
 
-const buttons = document.querySelectorAll('.toggle-details');
+/*const buttons = document.querySelectorAll('.toggle-details');
 
 for (const button of buttons) {
     button.addEventListener('click', function () {
@@ -29,7 +30,7 @@ for (const button of buttons) {
             this.textContent = 'More details';
         }
     });
-}
+}*/
 
 const form = document.getElementById('contactForm');
 const firstName = document.getElementById('firstName');
@@ -110,6 +111,11 @@ const toggleThemeButton = document.getElementById('toggleTheme');
 
 toggleThemeButton.addEventListener('click', function() {
     document.body.classList.toggle('dark-mode');
+    if (document.body.classList.contains('dark-mode')) {
+        toggleThemeButton.textContent = '☀️';
+    } else {
+        toggleThemeButton.textContent = '🌙';
+    }
 });
 
 
