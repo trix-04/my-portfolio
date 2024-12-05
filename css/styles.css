@@ -145,6 +145,68 @@ h2 {
     color: #111;
 }
 
+#projects{
+    margin: 40px auto;
+    padding: 0 20px;
+    max-width: 1200px;
+    text-align: center;
+
+}
+
+#projects h2{
+    text-align: center;
+    margin-bottom: 20px;
+    font-family: 'Inter', sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+#projects section{
+    display: block;
+}
+
+.scroll-container {
+    display: flex;
+    flex-direction: row;
+    overflow-x: auto; 
+    scroll-snap-type: x mandatory;
+    gap: 20px; 
+    padding: 20px 0;
+    align-items: center;
+}
+
+.scroll-container::-webkit-scrollbar {
+    height: 10px;
+}
+
+.scroll-container::-webkit-scrollbar-thumb {
+    background: #8f98b3; 
+    border-radius: 10px;
+}
+
+.scroll-item {
+    flex: 0 0 auto; 
+    scroll-snap-align: center; 
+    width: 300px; 
+    height: 200px; 
+    background-color: rgb(203, 225, 228);
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Inter', sans-serif;
+    font-weight: bold;
+    transition: transform 0.3s;
+}
+
+.scroll-item:hover {
+    transform: scale(1.05); 
+}
+
+
 #toggleTheme{
     position: fixed;
     top: 80px;
@@ -162,8 +224,8 @@ h2 {
 }
 
 .main-container {
-    scroll-snap-type: y mandatory;
-    overflow-y: auto; 
+    scroll-snap-type: y proximity;
+    overflow-y: scroll; 
     min-height: 80vh; 
     scroll-behavior: smooth; 
     overscroll-behavior: contain;
@@ -175,7 +237,7 @@ section {
     scroll-snap-align: start; 
     min-height: 100vh; 
     padding: 40px 20px; 
-    display: flex; 
+    display: block; 
     align-items: center; 
     justify-content: center; 
     margin: 0;
