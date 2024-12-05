@@ -1,3 +1,21 @@
+document.addEventListener("DOMContentLoaded", function() {
+    var loadingText = document.getElementById('loading-text');
+    var percentage = 0;
+    var interval = setInterval(function() {
+        percentage += 1;
+        loadingText.textContent = percentage + '%';
+        if (percentage >= 100) {
+            clearInterval(interval);
+            
+            preloader.style.opacity = '0';
+            setTimeout(function() {
+                preloader.style.display = 'none';
+            }, 500); n
+        }
+    }, 30);
+});
+
+
 const buttons = document.querySelectorAll('.toggle-details');
 
 for (const button of buttons) {
@@ -93,4 +111,5 @@ const toggleThemeButton = document.getElementById('toggleTheme');
 toggleThemeButton.addEventListener('click', function() {
     document.body.classList.toggle('dark-mode');
 });
+
 

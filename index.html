@@ -9,8 +9,13 @@
 
 </head>
 <body>
+
+    <div id="preloader">
+        <div id="loading-text">0%</div>
+    </div>
     
-    <header>
+    
+    <header>    
         <div class="logo-container">
             <!---<img src="path/to/your/logo.png" alt="Custom Logo" class="logo"> *will add logo after final edit-->
             <span class="site-name">Trish Figueroa</span>
@@ -26,67 +31,38 @@
     </header>
 
     <section id="about">
-        <h2>About Me</h2>
-        <p>Hi, my name is Trish! I am a self-taught multimedia artist passionate about expanding my creative skill set through technology. Currently, I am honing my skills in front-end development and UX/UI design to create user-centered, engaging experiences.</p>
-        <p>I worked as a Software Engineer Fellow at Headstarter.co, while also taking on roles as a Project Manager and Office Administrator within my previous jobs. My background in Neuroscience, Psychology, and Forensics adds a unique perspective to my work, blending human behavior insights with my passion for artistic creativity.</p>
-        <p>Apart from art, I also enjoy nature, sports, fashion, fitness, and travel—drawing from these experiences as inspiration for my creativity and growth.</p>
+            <h2>Hi, I'm Trish. I am a self-taught multimedia artist.</h2>
+            <!---<p>Finalize what will be included here : (ie. "Hi, my name is Trish! I am a self-taught multimedia artist passionate about expanding my creative skill set through technology. Currently, I am honing my skills in front-end development and UX/UI design to create user-centered, engaging experiences.</p>
+            <p>I worked as a Software Engineer Fellow at Headstarter.co, while also taking on roles as a Project Manager and Office Administrator within my previous jobs. My background in Neuroscience, Psychology, and Forensics adds a unique perspective to my work, blending human behavior insights with my passion for artistic creativity.</p>
+            <p>Apart from art, I also enjoy nature, sports, fashion, fitness, and travel—drawing from these experiences as inspiration for my creativity and growth."</p> -->
     </section>
 
-    <section class="grid-section" id="projects">
-        <h2>My Projects</h2>
-            <div class="projects-container">
-                <div class="project-item"><h4>Project 1 &#128193;</h4>
-                    <button class="toggle-details">More details</button>
-                    <div class="details">
-                        <p class="special-p">Details about Project 1...</p>
-                    </div>
-                </div>
-                <div class="project-item"><h4>Project 2 &#128193;</h4>
-                    <button class="toggle-details">More details</button>
-                    <div class="details">
-                        <p class="special-p">Details about Project 2...</p>
-                    </div>
-                </div>                    
-                <div class="project-item"><h4>Project 3 &#128193;</h4>
-                    <button class="toggle-details">More details</button>
-                    <div class="details">
-                        <p class="special-p">Details about Project 3...</p>
-                    </div>
-                </div>                   
-                <div class="project-item"><h4>Project 4 &#128193;</h4>
-                    <button class="toggle-details">More details</button>
-                    <div class="details">
-                        <p class="special-p">Details about Project 4...</p>
-                    </div>
-                </div>
-            </div>
+    <section id="projects">
+            <h2>Projects </h2>
+            <!--finalize how i want my projects to be set up & inlcude any current projects-->
     </section>
 
     <section id="contact">
         <h2>Contact Me</h2>
         <form id="contactForm" action="#" method="POST" novalidate>
-            <label for="name">First Name:</label>
-            <input type="text" id="firstName" name="first-name" placeholder="John" required>
-            <br>
+        <label for="name">First Name:</label>
+        <input type="text" id="firstName" name="first-name" placeholder="John" required>
+                
+        <label for="name">Last Name:</label>
+        <input type="text" id="lastName" name="last-name" placeholder="Doe" required>
+                
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="email address" required>
 
-            <label for="name">Last Name:</label>
-            <input type="text" id="lastName" name="last-name" placeholder="Doe" required>
-            <br>
-
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" placeholder="email address" required>
-
-            <label for="text-box">Message:</label>
-            <br>
-            <textarea id="message" name="message" placeholder="looking forward to hearing from you :)"></textarea>
-            <br>
-
-            <button type="submit" value="submit" class="grid-item submit-button">Submit</button>
-               
-
+        <label for="text-box">Message:</label>
+                
+        <textarea id="message" name="message" placeholder="looking forward to hearing from you :)"></textarea>
+                
+        <button type="submit" value="submit" class="grid-item submit-button">Submit</button>
         </form>
+    
     </section>
-
+   
     <footer>
         <p>&copy; Trish Figueroa, 2024</p>
     </footer>
