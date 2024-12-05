@@ -98,10 +98,11 @@ header {
 .logo-container {
     display: flex;
     align-items: center;
+    gap: 10px;
 }
 
 .logo{
-    width: 30px;
+    width: 35px;
     height: auto;
     margin-right: 10px;
 }
@@ -109,7 +110,6 @@ header {
 .site-name{
     font-size: 17px;
     font-family: 'Inter', sans-serif;
-    font-weight: bold;
     color: white;
 }
 
@@ -146,9 +146,9 @@ h2 {
 }
 
 #toggleTheme{
-    position:absolute;
-    top: 70px;
-    right: 20px;
+    position: fixed;
+    top: 80px;
+    right: 10px;
     padding: 10px;
     background-color: rgb(17, 17, 63);
     color: #fff;
@@ -199,6 +199,7 @@ input[type="text"], input[type="email"], #message {
     border: 1px solid #ccc;
     border-radius: 5px;
     box-sizing: border-box;
+    color: #333;
 }
 
 .submit-button{
@@ -212,50 +213,78 @@ input[type="text"], input[type="email"], #message {
 }
   
 .submit-button:hover{
-    background-color: rgb(186, 195, 187);
+    background-color: rgb(98, 102, 99);
     border-radius: 5px;
 }
+
 
 .dark-mode {
     background-color: #211e1e;
     color: #fff;
-    
 }
 
-.dark-mode .about-section{
+
+.dark-mode .about-section {
     background-color: #333;
 }
 
-.dark-mode nav ul li a
+.dark-mode nav ul li a,
 .dark-mode .site-name {
-    color:#b3b3b3;
+    color: #b3b3b3;
 }
 
-.dark-mode header, .dark-mode footer{
+.dark-mode header,
+.dark-mode footer {
     background-color: #07070b;
-    color:white;
+    color: white;
 }
 
-.dark-mode .project-item{
-    background-color:#444;
+.dark-mode .project-item {
+    background-color: #444;
+}
+
+.dark-mode form {
+    background-color: #5f5e5e; 
+}
+
+.dark-mode input[type="text"], 
+.dark-mode input[type="email"], 
+.dark-mode textarea {
+    background-color: #8d8c8c; 
+    border-color: #888; 
+    color: #fff; 
+}
+
+.dark-mode input[type="text"]:focus,
+.dark-mode input[type="email"]:focus,
+.dark-mode textarea:focus {
+    background-color: #fff;
+    color: #000;
+    border-color: #ccc; 
+}
+
+.dark-mode label {
+    color: #b3b3b3; 
 }
 
 
 .dark-mode h2,
 .dark-mode .about-heading h1,
 .dark-mode .about-description p,
-.dark-mode input[type="text"], 
-.dark-mode input[type="email"], 
-.dark-mode textarea {
-    color: #fff;
+.dark-mode label {
+    color: #989696; 
 }
 
-.dark-mode input[type="text"], 
-.dark-mode input[type="email"], 
-.dark-mode textarea {
-    background-color: #555;
-    border-color: #888;
+.dark-mode .submit-button {
+    background-color: #333;
+    color: #fff; 
 }
+
+.dark-mode .submit-button:hover {
+    background-color: rgb(203, 225, 228);
+    color: black;
+}
+
 
 .project-item{
     width: 100%;
