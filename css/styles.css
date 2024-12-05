@@ -217,6 +217,12 @@ input[type="text"], input[type="email"], #message {
     border-radius: 5px;
 }
 
+.error{
+    color:red;
+    font-size:10px;
+    margin-bottom: 5px;
+}
+
 
 .dark-mode {
     background-color: #211e1e;
@@ -283,6 +289,10 @@ input[type="text"], input[type="email"], #message {
 .dark-mode .submit-button:hover {
     background-color: rgb(203, 225, 228);
     color: black;
+}
+
+.dark-mode .error{
+    color:#ff4d4d;
 }
 
 
